@@ -1,46 +1,28 @@
-# Um pequeno somador
+# Parser para listas de Python
 
-Esta é uma tarefa-template, que deve ser modificada para ser convertida em
-outras atividades. Aqui, fica o enunciado da tarefa, ou seja, sua descrição, com
-instruções claras sobre o problema que deve ser resolvido. Esta tarefa consiste
-em fazer um somador. Ele deverá receber uma linha de texto contendo dois números
-inteiros. Essa linha se encerra com caractere fim de linha `\n`. O programa
-deverá imprimir na saída padrão a soma desses dois números
+Nesta tarefa, criaremos um pequeno parser de listas de Python. O programa
+receberá uma linha contendo uma lista, em notação Python, e deverá ser capaz de
+identificar se é uma lista válida ou se a sintaxe está incorreta. Caso seja uma
+lista válida, o programa deverá imprimir `OK\n` na tela. Caso seja inválida,
+deverá imprimir `ERRO\n`.
 
-## Como fazer uma outra tarefa usando este template
-1. Crie um repositório vazio no Github (sem inicializar o readme nem a licença)
-   com o nome da sua tarefa usando a interface web. Vamos chamar esse
-   repositório com o nome fantasma de `foobar`.
-
-1. Faça um clone deste repositório para um diretório com o nome de sua tarefa.
-   Se sua tarefa se chama foobar, então a linha de comando é:
-   `git clone https://github.com/Beethoven-ED/template_unit_test.git foobar`
-
-1. Desvincule sua cópia local deste repositório:
-   `git remote remove origin`
-
-1. Vincule sua cópia local ao seu repositório no github:
-   `git remote add origin https://github.com/seu_username/foobar.git`
-
-1. Faça as modificações necessárias no código. Use `git add` e `git commit`
-   sempre que necessário. Lembre-se de:
-   * Modificar o enunciado
-   * Adicionar testes de unidade
-   * Adicionar um programa-template, se achar necessário.
-   * Testar se `make` e `make test` estão funcionando adequadamente.
-
-1. Quando terminar, envie suas modificações ao repositório: `git push
-   --set-upstream origin master` (a flag `--set-upstream origin master` só será
-   necessária da primeira vez que fizer o `push`).
-
-1. Verifique se as modificações estão todas no Github, no endereço correto.
+Uma lista, em Python, é definida como um sinal de abre-chave `[' seguida de
+uma sequência de elementos separadas por vírgula e, por fim, um sinal de
+fecha-chave `]`. Um elementos pode ser qualquer identificador válido de Python,
+mas neste
+exercício vamos nos restringir a inteiros, palavras e strings (veja os testes
+para verificar a sintaxe deles). Também, um elemento de uma lista pode ser uma
+lista. Listas vazias também são possíveis.
 
 ## Exemplos
 
 Entrada | Saida
 ------- | -----
-`1 2` | `3`
-`100 1` | `101`
+`[]` | `OK\n`
+[50 50 50]` | `ERRO\n`
+[50, 50, 50` | `ERRO\n`
+[50, 50, 50]` | `OK\n`
+[50, 50, [50]]` | `OK\n`
 
 
 ## Instruções adicionais
