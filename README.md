@@ -6,7 +6,7 @@ identificar se é uma lista válida ou se a sintaxe está incorreta. Caso seja u
 lista válida, o programa deverá imprimir `OK\n` na tela. Caso seja inválida,
 deverá imprimir `ERRO\n`.
 
-Uma lista, em Python, é definida como um sinal de abre-chave `[' seguida de
+Uma lista, em Python, é definida como um sinal de abre-chave `[` seguida de
 uma sequência de elementos separadas por vírgula e, por fim, um sinal de
 fecha-chave `]`. Um elementos pode ser qualquer identificador válido de Python,
 mas neste
@@ -19,10 +19,10 @@ lista. Listas vazias também são possíveis.
 Entrada | Saida
 ------- | -----
 `[]` | `OK\n`
-[50 50 50]` | `ERRO\n`
-[50, 50, 50` | `ERRO\n`
-[50, 50, 50]` | `OK\n`
-[50, 50, [50]]` | `OK\n`
+`[50 50 50]` | `ERRO\n`
+`[50, 50, 50]` | `ERRO\n`
+`[50, 50, 50]` | `OK\n`
+`[50, 50, [50]]` | `OK\n`
 
 
 ## Instruções adicionais
