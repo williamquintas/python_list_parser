@@ -14,6 +14,9 @@ exercício vamos nos restringir a inteiros, palavras e strings (veja os testes
 para verificar a sintaxe deles). Também, um elemento de uma lista pode ser uma
 lista. Listas vazias também são possíveis.
 
+## Informações adicionais
+O programa deverá ser escrito em Yacc/Bison e Lex/Flex.
+
 ## Exemplos
 
 Entrada | Saida
